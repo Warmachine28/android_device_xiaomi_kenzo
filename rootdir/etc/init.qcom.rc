@@ -161,6 +161,9 @@ on boot
     chown system system /sys/class/leds/green/blink
     chown system system /sys/class/leds/blue/blink
 
+    #Button backlight permission
+    chown system system /sys/class/leds/button-backlight/brightness
+
 on fs
     mount_all fstab.qcom
     mkdir /persist/data 0700 system system
